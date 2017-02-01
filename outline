@@ -1,0 +1,47 @@
+Audience: http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram
+What is ML?
+
+Supervised, unsup, semisup;
+training, dev/tuning/validation, test
+Ng's chart:
+	https://twitter.com/JordiTorresBCN/status/805733775057518592
+	https://gist.github.com/stuhlmueller/d809bb7b4a9dc03bf75f695a0f3ea2e4
+
+classification, clustering/density estimation, regression
+scikit's ML map: http://scikit-learn.org/stable/tutorial/machine_learning_map/
+
+Short overview:
+	Decision trees, random forests
+	k-NN: NNS, curse of dimensionality
+	(not covered: naive bayes, probabilistic graphical models, genetic/evolutionary algos, ...)
+
+(linear algebra basics)
+Log-linear models
+	perceptron
+	word2vec
+FFNN
+	What can a NN learn? (cybenko, table from Kriesel's book: ?pg~97?)
+	Software: TensorFlow, Torch, MXNet, Keras, others (dl4j, chainer, dynet, theano, caffe, neon, cntk, paddle, ...)
+	tf-playground
+	Normalization speedups
+RNN
+	Applications: sequences
+RNN-based seq2seq
+	Applications: MT, ASR, summarization, chatbots,
+CNN
+	For 2d images
+	for 1d text: autoencoder, seq2seq, classification, IR
+
+
+Regularization:
+	Overfitting: examples, illustrations
+	Fewer parameters: narrower and/or shallower networks
+	Early stopping
+	Dropout, drop*
+	Weight decay: adds to error: L1=sum of weights; L2=squared magnitude
+		L1 regularization: (how it works) pushes tiny weights towards zero, to encourage sparse models
+		L2 regularization: (how it works) smooths weight values (less spiky), to encourage using all nodes
+		L1+L2 reg: "Elastic net regularization"
+
+
+(Ethics: bias in data, collection of data, accountability, ...)
